@@ -1,0 +1,6 @@
+On ubuntu install the following packages :
+postfix postfix-mysql python-mysqldb mysql-server mysql-client courier-authdaemon courier-authlib-mysql courier-pop courier-pop-ssl courier-imap courier-imap-ssl libsasl2-2 libsasl2-modules libsasl2-modules-sql sasl2-bin libpam-mysql openssl
+
+Then open config.py and use your own password account and domains.
+
+Then lauch "sudo python manage.py install"
