@@ -1,10 +1,12 @@
-#!/usr/bin/python2.7
+#!/bin/python2.7
 # -*- coding: utf-8 -*-
 
 import sys
 import os
 import subprocess
 import shutil
+
+sys.path[:0] = ['../']
 
 import config
 

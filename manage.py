@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/bin/python2.7
 # -*- coding: utf-8 -*-
 
 import os
@@ -7,11 +7,11 @@ import subprocess
 import shutil
 
 import config
-from mysqlpostfix import mysqlpostfix
-from filepostfix import filepostfix
-from security import security
-from courier import courier
-from useranddomain import useranddomain
+from classes.mysqlpostfix import mysqlpostfix
+from classes.filepostfix import filepostfix
+from classes.security import security
+from classes.courier import courier
+from classes.useranddomain import useranddomain
 
 class manage:
     
@@ -79,9 +79,9 @@ class manage:
                 if len(sys.argv) == 4:
                     self.uandd.addUser(sys.argv[2],sys.argv[3])
                 
-                    
-t = manage()
-t.choose()
+if __name__ == '__main__':
+    t = manage()
+    t.choose()
             
     
     

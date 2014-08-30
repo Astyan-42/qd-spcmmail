@@ -1,4 +1,4 @@
-#!/usr/bin/python2.7
+#!/bin/python2.7
 # -*- coding: utf-8 -*-
 
 import MySQLdb as mdb
@@ -6,6 +6,7 @@ import MySQLdb.cursors
 import sys
 import subprocess
 
+sys.path[:0] = ['../']
 
 import config
 
