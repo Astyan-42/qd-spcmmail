@@ -180,7 +180,7 @@ postfixmain = ("main.cf",
 "\n",
 "# client\n",
 "smtpd_client_restrictions =\n",
-"        reject_unknown_client,\n",
+#"        reject_unknown_client,\n", Reject the request when the client address to name lookup failed. The unknown_client_reject_code parameter specifies the response code to rejected requests (default: 450). 
 "        permit_mynetworks\n",
 "\n",
 "virtual_alias_maps = mysql:"+os.path.join(postfixdir,mysqlvirtual_aliases[0])+",mysql:"+os.path.join(postfixdir,mysqlvirtual_aliases_mailbox[0])+"\n",
